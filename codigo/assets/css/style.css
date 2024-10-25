@@ -1,0 +1,285 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  html{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .custom-gradient {
+    background: linear-gradient(270deg, #003886, rgb(0, 102, 255)); /* Gradiente com cores mais escuras */
+    color: #ffffff; /* Define a cor do texto como branco */
+    padding: 10px; /* Ajuste o padding conforme necessário */
+  }
+  header{
+    background:linear-gradient(270deg,#003886, rgb(0, 102, 255)) ;
+    text-decoration: none;
+    display: flex;
+    width: 100%
+  }
+  nav {
+    display: flex;
+    justify-content: space-around;
+    font-family: system-ui, -apple-system, Helvetica, 
+    Arial, sans-serif;
+    height: 8vh;
+  }
+  .menu {
+    padding-top: 25px;
+    list-style: none;
+    display: flex;
+  }
+  footer{
+
+    letter-spacing: 3px;
+  }
+  .menu a {
+    padding-top: px;
+    text-decoration: none;
+    letter-spacing: 3px;
+    margin-right:32px;
+    color: #fcfcfc;
+  }
+  .tit_fichas_rec{
+    text-align: center;
+    font-size: 1.9em;
+    letter-spacing: 2px;
+  }
+  
+  .card-text{
+    font-size: 2.0em;
+    height: 100%;
+  }
+  
+  #menuToggle{
+     display: none;
+   }
+    .menu-icon{
+      display: none;
+      z-index: 999999;
+    }
+  
+    #closeIcon {
+        z-index: 1; /* Um valor maior do que o z-index do menu */
+      }
+      #menuToggle{
+        display: none;
+      }
+       .menu-icon{
+         display: none;
+         z-index: 999999;
+       }
+
+       .ContainerButton
+       {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 1px solid black;
+          margin-top: 25px;
+      }
+      
+
+      .ButtonGerarFicha{
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 25px;
+        border-radius: 10px;
+      }
+
+       button{
+        display: block;
+        width: 60em;
+        padding: 1em;
+        font-size: 1em;
+        background:rgb(0, 102, 255);
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        border-radius: 10px;
+      }
+
+      .gerarficha {
+        display: inline-block;
+        padding: 1em 2em;
+        font-size: 1em;
+        background: rgb(0, 102, 255);
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        border-radius: 10px;
+        text-decoration: none; /* Remover sublinhado padrão */
+        text-align: center; /* Centralizar o texto */
+      }
+    
+
+      
+      .custom-button:hover {
+        background-color: #007bff;
+      }
+    
+      .gerarficha{
+        border-radius: 10px;
+        font-size: 1.2rem;
+      }
+
+      .card-text{
+        font-size: 2rem;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+
+   .card-text{
+    max-height: 50%;
+    margin: 0;
+   }
+
+   .card-image-overlay{
+    padding: 20px;
+    height: 300px;
+   }
+
+   .card-img{
+    height: 18rem;
+   }
+
+  
+      @media only screen and (max-width: 786px){
+  
+        .card-text{
+          font-size: 1.3em;
+          height: 100%;
+        }
+        
+        .menu a {
+            text-decoration: none;
+            letter-spacing: 3px;
+            margin-right:32px;
+            color: #0D6EFD;
+          }
+  
+  
+      .header nav{
+        display: absolute;
+        width: 100%;
+        height: 100%;
+      }
+      .menu{
+        padding-top: 0px;
+        display: flex;
+        position: fixed;
+        flex-wrap: wrap;
+        align-items: center;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0%;
+        overflow: hidden;
+        background: rgba(0,0,0,0.7);
+        transition: height 0.3s;
+        -webkit-transition: height 0.3s ;
+        -moz-transition: height 0.3s ;
+        -o-transition: height 0.3s ;
+        z-index: 9999;
+      }
+  
+      .titulo{
+        width: 100%;
+        font-size: large;
+      }
+      .menu li a {
+        display: block;
+        text-align: center;
+        width: 100%;
+  
+  
+      }
+      .menu li{
+        display: block;
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 0px;
+  
+      }
+  
+      .menu-icon{
+        display: block;
+        color: #fcfcfc;
+        width: 50px;
+        height: 30px;
+        position: absolute;
+        top: 10px;
+        right: 30px;
+        line-height: 60px;
+        cursor: pointer;
+      }
+  
+      .usuario-senha-password::before {
+        font-family: 'Arial', sans-serif;
+        letter-spacing: 2px; /* Espaçamento entre letras para melhor aparência */
+        -webkit-text-security: disc; /* Estilo de segurança de texto no Webkit */
+        text-security: disc; /* Estilo de segurança de texto no Firefox (futuro) */
+    }
+  
+      .menu-icon i{
+        font-size: 2em;
+      }
+      #menuToggle:checked ~ label .fa-bars {
+        display: none;
+      }
+  
+      #menuToggle:checked ~ label .fa-times-circle {
+        display: block;
+        position: fixed;
+        z-index: 99999;
+      }
+  
+      #menuToggle:not(checked) ~ label .fa-times-circle {
+        display: none;
+      }
+  
+      #menuToggle:not(checked) ~ label .fa-bars {
+        display: block;
+        padding-top: 45%;
+        height:30px;
+      }
+  
+      #menuToggle:checked ~ ul{
+        height: 100%;
+      }
+    }
+
+    .bemvindo {
+      position: absolute; 
+      top: 87px; 
+      right: 15px;
+      background: linear-gradient(270deg, #003886, rgb(0, 102, 255)); 
+      color: #fff;
+      padding: 10px 20px; 
+      border-radius: 5px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+      z-index: 1000; 
+  }
+
+  @media only screen and (max-width: 568px){
+    .card-text{
+      font-size: 1.1em;
+      height: 90%;
+    }
+    .tit_fichas_rec{
+      font-size: 110%;
+    }
+  }
+  
+  
